@@ -1,0 +1,35 @@
+// 購物車頁
+.cart-control {
+    width: 120px;
+}
+
+.price-border {
+
+    // 低於設定就出現上下邊框
+    @include media-breakpoint-down(md) {
+        border-top: solid 1px theme-color("lily-white");
+        border-bottom: solid 1px theme-color("lily-white");
+    }
+}
+
+
+.cart-check-box {
+
+    // 大於設定顯示整個視窗的背景色
+    @include media-breakpoint-up(md) {
+        background-color: theme-color("hunter-green");
+        color: white;
+    }
+
+    // 右邊小計視窗的標題
+    .cart-check-title {
+        background-color: theme-color("lily-white");
+        color: theme-color("hunter-green");
+
+        // 高於設定就給背景顏色
+        @include media-breakpoint-up(md) {
+            background-color: theme-color("hunter-green");
+            color: white;
+        }
+    }
+}

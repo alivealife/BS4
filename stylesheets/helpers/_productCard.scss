@@ -1,0 +1,54 @@
+// 首頁下方商品卡片
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+
+    .product-img {
+        height: 315px;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+    }
+
+    .product-tag {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        writing-mode: vertical-rl;
+        color: white;
+        padding: 10px;
+        background-color: theme-color("hunter-green");
+        letter-spacing: 5px;
+    }
+
+    .product-love-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        a {
+            color: theme-color("hunter-green");
+        }
+
+    }
+
+    .product-body {
+        border: 1px solid theme-color("lily-white");
+    }
+
+    .product-name {
+        border-right: 1px solid theme-color("lily-white");
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: theme-color("hunter-green");
+        font-size: $font-size-lg;
+    }
+
+    .product-price {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: theme-color("hunter-green");
+        font-size: $font-size-lg;
+    }
+}

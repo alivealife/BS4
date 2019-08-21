@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>六角甜點工坊</title>
+    <link rel="icon" href="images/favicon_48.ico">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <!-- 桌面版顯示這個 -->
+                <img src="./images/logo-all-dark.svg" width="220" height="40" alt="" class="d-none d-md-inline-block">
+                <!-- 行動版顯示這個 -->
+                <img src="./images/logotype-sm-dark.svg" width="114" height="18" alt=""
+                    class="d-inline-block d-md-none">
+            </a>
+            <!-- 把購物車拉出，並運用 order 的方式讓他在最右邊 -->
+            <a class="nav-link d-flex align-items-center order-md-1 h4 mb-0 text-hunter-green" href="carts.html"><i
+                    class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">甜點</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container px-0 px-md-3 py-md-6 py-0">
+        <div class="row no-gutters justify-content-center">
+            <!-- 為了行動版排版方便，在此以兩層 row > col 構造製作 -->
+            <div class="col-md-10">
+                <!-- 讓這行在行動版才出現 -->
+                <h1 class="d-md-none bg-hunter-green text-center mb-0 text-lily-white py-4">會員登入</h1>
+                <!-- 讓這組 row 裡面的兩組 col 在電腦版時左右正常順序排列，行動版時下相反順序排列 -->
+                <div class="row no-gutters flex-column-reverse flex-md-row">
+                    <div class="col-md-6 ">
+                        <div class="bg-hunter-green">
+                            <!-- 讓這這行在桌面版顯示，在行動版隱藏 -->
+                            <h1 class="d-none d-md-block text-center py-5 mb-0 text-lily-white">會員登入</h1>
+                            <!-- form-login-position 將 form 改為 position: relative; 藉此來使按鈕位置達成設計稿的樣式 -->
+                            <form class="px-4 pt-3 pt-md-0 pb-8 form-login-position">
+                                <div class="form-group form-text-bar d-flex justify-content-center align-items-center">
+                                    <label for="guestEmail" class="h5"><i class="fa fa-user text-icon text-hunter-green"
+                                            aria-hidden="true"></i></label>
+                                    <input type="email"
+                                        class="form-control w-100 h-100 py-3 px-5 bg-lily-white border-0 mb-0"
+                                        id="guestEmail" aria-describedby="emailHelp" placeholder="電子信箱/手機號碼">
+                                </div>
+                                <div class="form-group form-text-bar d-flex justify-content-center align-items-center">
+                                    <label for="guestPassword" class="h5"><i
+                                            class="fa fa-key text-icon text-hunter-green"
+                                            aria-hidden="true"></i></label>
+                                    <input type="password"
+                                        class="form-control w-100 h-100 py-3 px-5 bg-lily-white border-0 mb-0"
+                                        id="guestPassword" placeholder="請輸入使用者密碼">
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="holdCheck">
+                                    <label class="custom-control-label text-lily-white" for="holdCheck">記住我</label>
+                                </div>
+                                <!-- 藉由 form-login-btn 來使按鈕位於設計稿位置 -->
+                                <button type="submit"
+                                    class="btn btn-golden-glow btn-block rounded-0 btn-lg form-login-btn py-3">登入帳號</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 py-md-3 py-0">
+                        <div class="bg-lily-white p-4">
+                            <div class="h4 text-center d-md-block d-none mb-0 pb-4 text-morning-blue">—— 連結社群帳號 ——</div>
+                            <div class="row no-gutters">
+                                <div class="col-md-12 col-4 mb-0 mb-md-4">
+                                    <button class="btn btn-light btn-block h-100 py-3 border border-lily-white">
+                                        <img src="images/ic-facebook-logotype.svg" alt="" width="108" class="img-fluid">
+                                    </button>
+                                </div>
+                                <div class="col-md-12 col-4 mb-0 mb-md-4">
+                                    <button class="btn btn-light btn-block h-100 py-3 border border-lily-white">
+                                        <img src="images/ic-google.svg" alt="" width="95" class="img-fluid">
+                                    </button>
+                                </div>
+                                <div class="col-md-12 col-4 mb-0 mb-md-4">
+                                    <button class="btn btn-light btn-block h-100 py-3 border border-lily-white">
+                                        <img src="images/ic-yahoo.svg" alt="" width="96" class="img-fluid">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-hunter-green py-4">
+        <div class="container">
+            <!-- 令整個 row 區置中 -->
+            <div class="row justify-content-center">
+                <!-- 利用 flex 的方式，讓所有東西垂直 + 水平置中(行動裝置時，電腦版左邊區塊為置左) -->
+                <div
+                    class="col-md-5 d-flex justify-content-center justify-content-md-start align-items-center mb-3 mb-md-0">
+                    <img src="images/logo-light.svg" alt="" width="40">
+                    <!-- 預設下方會有一個 margin ，所以使用 mb-0 來消除以達到垂直置中效果 -->
+                    <span class="text-white h4 ml-3 mb-0">訂閱你我的甜蜜郵件</span>
+                </div>
+                <div class="col-md-5">
+                    <form class="form-text-bar  d-flex justify-content-center align-items-center">
+                        <label for="email-bar" class="h5">
+                            <i class="fa fa-envelope text-icon text-hunter-green" aria-hidden="true"></i>
+                        </label>
+                        <input type="email" name="email-bar" id="email-bar"
+                            class="w-100 py-3 px-5 bg-lily-white border-0 mb-0">
+                        <button type="submit" class="btn btn-golden-glow py-3 px-4 h4 mb-0 border-0"><i
+                                class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-3 bg-lily-white">
+        <div class="container">
+            <!-- 令整個 row 區置中 -->
+            <div class="row justify-content-center">
+                <!-- 使用直式排版，並讓物件上下分散撐開 -->
+                <div class="col-md-5 d-flex flex-column justify-content-between">
+                    <div>
+                        <img src="images/logotype-sm-dark.svg" alt="" height="27">
+                    </div>
+                    <ul class="ul-none pl-0 text-hunter-green pt-5">
+                        <li>07-1234-5678</li>
+                        <li>
+                            <a href="mailto:sweetaste@email.com" class="text-hunter-green">sweetaste@email.com</a>
+                        </li>
+                        <li>
+                            800 高雄市新興區幸福路 520 號
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 text-right d-none d-md-block">
+                    <img src="images/sm-今天是個吃甜點的好日子.svg" alt="" width="60">
+                </div>
+            </div>
+            <div class="row justify-content-center pt-4">
+                <div class="col-md-5">
+                    <img src="images/ic-line@.svg" alt="" width="32" height="32">
+                    <img src="images/ic-facebook.svg" alt="" width="32" height="32">
+                </div>
+                <div class="col-md-5 text-left text-md-right pt-2 text-hunter-green">
+                    © 2018 Sweetaste* All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">
+    </script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

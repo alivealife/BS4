@@ -1,0 +1,31 @@
+// 結帳
+.check-img {
+    width: 120px;
+    height: 80px;
+    background-size: cover;
+    background-position: center center;
+}
+
+// 信用卡標誌位置
+.card-form{
+    position: relative;
+}
+
+.card-position{
+    position: absolute;
+    right: 20px;
+    top: 55px;
+    color: theme-color("hunter-green");
+}
+
+// 發票寄送選擇切換標籤
+.list-group-checkout{
+    background-color: theme-color("hunter-green");
+    color: theme-color("lily-white");
+    border-color: theme-color("lily-white");
+    font-weight: bold;
+    .active{
+        background-color: theme-color("lily-white");
+        color: theme-color("hunter-green");
+    }
+}

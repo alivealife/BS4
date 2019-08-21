@@ -1,0 +1,42 @@
+// 首頁內容
+.section-bg-light {
+    background-color: theme-color("lily-white");
+}
+
+.section-md-height {
+    max-height: 420px;
+    line-height: 1.5;
+
+    // 平常行高 2.5 低於 md 時變 1.5 
+    @include media-breakpoint-up(md) {
+        line-height: 2.5;
+    }
+}
+
+.section-md-position {
+    @include media-breakpoint-up(md) {
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+}
+
+.section-bg {
+    min-height: 250px;
+}
+
+// 讓文字在 md 以上時直式書寫
+.text-md-vertical {
+    color: theme-color("hunter-green");
+
+    @include media-breakpoint-up(md) {
+        writing-mode: vertical-rl;
+    }
+}
+
+// 讓圖片在 md 以下時消除左右的 margin ，讓圖片滿版
+.margin-md-0 {
+    @include media-breakpoint-down(md) {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}

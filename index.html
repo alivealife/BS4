@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>六角甜點工坊</title>
+    <link rel="icon" href="images/favicon_48.ico">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <!-- 桌面版顯示這個 -->
+                <img src="./images/logo-all-dark.svg" width="220" height="40" alt="" class="d-none d-md-inline-block">
+                <!-- 行動版顯示這個 -->
+                <img src="./images/logotype-sm-dark.svg" width="114" height="18" alt=""
+                    class="d-inline-block d-md-none">
+            </a>
+            <!-- 把購物車拉出，並運用 order 的方式讓他在最右邊 -->
+            <a class="nav-link d-flex align-items-center order-md-1 h4 mb-0 text-hunter-green" href="carts.html"><i
+                    class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">甜點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 大於設定就保留 px-3 ，以下就 px-0 藉此消除行動版左右邊界 -->
+    <header class="header container px-0 px-md-3">
+        <div class="bg-cover main-img"
+            style="background-image: url(https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0db4ee79bdce92722b31112b&auto=format&fit=crop&w=925&q=80)">
+        </div>
+        <!-- 主頁圖片下方三個選單 -->
+        <!-- 取 10 格並置中達成左右空格 定義 rectangle-menu-section 讓位置疊到主圖上-->
+        <div class="row justify-content-center rectangle-menu-section no-gutters">
+            <div class="col-md-10">
+                <div class="row no-gutters">
+                    <!-- 讓文字變成直式並置中 -->
+                    <a href="#" class="col-4 rectangle-wrap">
+                        <!-- 利用 z-index 使文字在最上層顯示 -->
+                        <span class="rectangle-text">本日精選</span>
+                        <!-- 利用 z-index 讓綠色的圖層在文字下一層，並用定位方式讓整個按鈕都上綠色 -->
+                        <div class="zindex-3 rectangle-cover rectangle-sides"></div>
+                        <!-- 用定位方式讓背景圖充滿整個按鈕，並使用 filter: blur(3px) 讓背景模糊 -->
+                        <div class="bg-cover rectangle-sides rectangle-fuzzy"
+                            style="background-image: url(https://bit.ly/2QbVsVR)"></div>
+                    </a>
+                    <a href="#" class="col-4 rectangle-wrap">
+                        <span class="rectangle-text">人氣推薦</span>
+                        <div class="zindex-3 rectangle-cover rectangle-sides"></div>
+                        <div class="bg-cover rectangle-sides rectangle-fuzzy"
+                            style="background-image: url(https://bit.ly/2Dwoxd7)"></div>
+                    </a>
+                    <a href="#" class="col-4 rectangle-wrap">
+                        <span class="rectangle-text">新品上市</span>
+                        <div class="zindex-3 rectangle-cover rectangle-sides"></div>
+                        <div class="bg-cover rectangle-sides rectangle-fuzzy"
+                            style="background-image: url(https://bit.ly/2OUteif)"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="py-md-5">
+        <img class="d-block d-md-none my-5 w-50 mx-auto" src="images/sm-為什麼選擇了做甜點.svg" alt="">
+    </section>
+    <section class="section-bg-light">
+        <div class="container">
+            <div class="row section-md-height">
+                <div class="col-md-6 section-md-position">
+                    <!-- margin-md-0 讓圖片在 md 以下時消除左右的 margin ，讓圖片滿版 -->
+                    <div class="h-100 bg-cover section-bg margin-md-0"
+                        style="background-image: url(https://bit.ly/2xPn7Eq)"></div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <div class="text-md-vertical mx-auto py-md-7 py-3">
+                        <p class="mb-0">青山依舊在，幾度夕陽紅。慣看秋月春風。</p>
+                        <p class="mb-0">一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+                        <p class="mb-0">是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+                    </div>
+                    <div>
+                        <img src="images/lg-為什麼選擇了做甜點.svg" alt="" class="d-none d-md-block section-md-position"
+                            width="90">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-md-5">
+        <img class="d-block d-md-none my-5 w-50 mx-auto" src="images/sm-為什麼一定要吃甜點.svg" alt="">
+    </section>
+    <section class="section-bg-light">
+        <div class="container">
+            <div class="row section-md-height flex-row-reverse">
+                <div class="col-md-6 section-md-position">
+                    <div class="h-100 bg-cover section-bg margin-md-0"
+                        style="background-image: url(https://bit.ly/2zBjQuq)"></div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <div class="text-md-vertical mx-auto py-md-7 py-3">
+                        <p class="mb-0">青山依舊在，幾度夕陽紅。慣看秋月春風。</p>
+                        <p class="mb-0">一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+                        <p class="mb-0">是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+                    </div>
+                    <div>
+                        <img src="images/lg-為什麼一定要吃甜點.svg" alt="" class="d-none d-md-block section-md-position"
+                            width="90">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-8">
+        <img src="images/sm-想吃甜點是不需要理由的.svg" alt="" class="d-block d-md-none w-50 mx-auto">
+        <img src="images/lg-想吃甜點是不需要理由的.svg" alt="" class="d-md-block d-none mx-auto" width="90">
+    </section>
+    <section class="container mb-5 mb-md-6">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="product-card mb-3">
+                    <div class="product-img" style="background-image: url(https://bit.ly/2zBjQuq)">
+                        <div class="product-tag">
+                            本日精選
+                        </div>
+                        <div class="product-love-icon">
+                            <a href="#"><i class="fa fa-heart-o fa-2x favorite" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-body d-flex text-center">
+                        <div class="product-name col">焦糖馬卡龍</div>
+                        <div class="product-price col">NT$ 450</div>
+                    </div>
+                    <a href="#" class="btn btn-lily-white btn-block btn-lg rounded-0 py-3">加入購物車</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-card mb-3">
+                    <div class="product-img" style="background-image: url(https://bit.ly/2R5tqwD)">
+                        <div class="product-tag">
+                            本日精選
+                        </div>
+                        <div class="product-love-icon">
+                            <a href="#"><i class="fa fa-heart-o fa-2x favorite" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-body d-flex text-center">
+                        <div class="product-name col">焦糖馬卡龍</div>
+                        <div class="product-price col">NT$ 450</div>
+                    </div>
+                    <a href="#" class="btn btn-lily-white btn-block btn-lg rounded-0 py-3">加入購物車</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-card mb-3">
+                    <div class="product-img" style="background-image: url(https://bit.ly/2Dwoxd7)">
+                        <div class="product-tag">
+                            本日精選
+                        </div>
+                        <div class="product-love-icon">
+                            <a href="#"><i class="fa fa-heart-o fa-2x favorite" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-body d-flex text-center">
+                        <div class="product-name col">焦糖馬卡龍</div>
+                        <div class="product-price col">NT$ 450</div>
+                    </div>
+                    <a href="#" class="btn btn-lily-white btn-block btn-lg rounded-0 py-3">加入購物車</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-hunter-green py-4">
+        <div class="container">
+            <!-- 令整個 row 區置中 -->
+            <div class="row justify-content-center">
+                <!-- 利用 flex 的方式，讓所有東西垂直 + 水平置中(行動裝置時，電腦版左邊區塊為置左) -->
+                <div
+                    class="col-md-5 d-flex justify-content-center justify-content-md-start align-items-center mb-3 mb-md-0">
+                    <img src="images/logo-light.svg" alt="" width="40">
+                    <!-- 預設下方會有一個 margin ，所以使用 mb-0 來消除以達到垂直置中效果 -->
+                    <span class="text-white h4 ml-3 mb-0">訂閱你我的甜蜜郵件</span>
+                </div>
+                <div class="col-md-5">
+                    <form class="form-text-bar  d-flex justify-content-center align-items-center">
+                        <label for="email-bar" class="h5">
+                            <i class="fa fa-envelope text-icon text-hunter-green" aria-hidden="true"></i>
+                        </label>
+                        <input type="email" name="email-bar" id="email-bar"
+                            class="w-100 py-3 px-5 bg-lily-white border-0 mb-0">
+                        <button type="submit" class="btn btn-golden-glow py-3 px-4 h4 mb-0 border-0"><i
+                                class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-3 bg-lily-white">
+        <div class="container">
+            <!-- 令整個 row 區置中 -->
+            <div class="row justify-content-center">
+                <!-- 使用直式排版，並讓物件上下分散撐開 -->
+                <div class="col-md-5 d-flex flex-column justify-content-between">
+                    <div>
+                        <img src="images/logotype-sm-dark.svg" alt="" height="27">
+                    </div>
+                    <ul class="ul-none pl-0 text-hunter-green pt-5">
+                        <li>07-1234-5678</li>
+                        <li>
+                            <a href="mailto:sweetaste@email.com" class="text-hunter-green">sweetaste@email.com</a>
+                        </li>
+                        <li>
+                            800 高雄市新興區幸福路 520 號
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 text-right d-none d-md-block">
+                    <img src="images/sm-今天是個吃甜點的好日子.svg" alt="" width="60">
+                </div>
+            </div>
+            <div class="row justify-content-center pt-4">
+                <div class="col-md-5">
+                    <img src="images/ic-line@.svg" alt="" width="32" height="32">
+                    <img src="images/ic-facebook.svg" alt="" width="32" height="32">
+                </div>
+                <div class="col-md-5 text-left text-md-right pt-2 text-hunter-green">
+                    © 2018 Sweetaste* All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">
+    </script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+// 進度條
+.step-bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: theme-color("morning-blue");
+    }
+
+    .step-bar-circle {
+        height: 20px;
+        width: 20px;
+        border: 1px solid theme-color("morning-blue");
+        border-radius: 20px;
+        position: relative;
+        background-color: theme-color("hunter-green");
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .active {
+        border-color: theme-color("lily-white");
+
+        &:after {
+            content: "";
+            height: 14px;
+            width: 14px;
+            display: block;
+            background-color: theme-color("lily-white");
+            border-radius: 20px;
+        }
+    }
+    .step-checked{
+        color: theme-color("hunter-green");
+        background-color: theme-color("lily-white");
+    }
+    .step-checked-dark{
+        color: theme-color("lily-white");
+    }
+}

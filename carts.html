@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>六角甜點工坊</title>
+    <link rel="icon" href="images/favicon_48.ico">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <!-- 桌面版顯示這個 -->
+                <img src="./images/logo-all-dark.svg" width="220" height="40" alt="" class="d-none d-md-inline-block">
+                <!-- 行動版顯示這個 -->
+                <img src="./images/logotype-sm-dark.svg" width="114" height="18" alt=""
+                    class="d-inline-block d-md-none">
+            </a>
+            <!-- 把購物車拉出，並運用 order 的方式讓他在最右邊 -->
+            <a class="nav-link d-flex align-items-center order-md-1 h4 mb-0 text-hunter-green" href="carts.html"><i
+                    class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">甜點</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container">
+        <!-- 外層 row
+            ├── 左邊購物車內容
+            │---├── 商品圖、名稱、單價及數量選擇區
+            │---│---├── 商品圖
+            │---│---└── 名稱、單價及數量選擇區
+            │---└── 總價及垃圾桶
+            └── 右邊小計區塊 -->
+        <div class="row">
+            <div class="col-md-8 text-hunter-green">
+                <!-- 放在外面讓行動版時可以滿版 -->
+                <h1 class="bg-lily-white text-center h4 py-3 margin-md-0">您的購物車</h1>
+                <div class="row py-3">
+                    <div class="col-md-9 mb-3 mb-dm-0">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="bg-cover h-100 w-100" style="background-image: url(https://bit.ly/2QvsT63)">
+                                </div>
+                            </div>
+                            <!-- 電腦版水平排列，行動版垂直排列 -->
+                            <div class="col-6 col-md-9 py-3 d-flex flex-column flex-md-row align-items-center">
+                                <span class="h5 text-left mb-0">抹茶馬卡龍<br>NT$ 450</span>
+                                <div class="input-group mb-0 cart-control ml-0 ml-md-auto">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-lily-white" type="button"><i class="fa fa-minus text-hunter-green"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                    <input type="text" class="form-control py-4 text-center border-lily-white" placeholder=""
+                                        aria-label="Example text with two button addons"
+                                        aria-describedby="button-addon3" value="2">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-lily-white" type="button"><i class="fa fa-plus text-hunter-green"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 讓垃圾桶在行動版不顯示，讓價格跟垃圾桶區塊在電腦版左右撐開，行動版靠右 -->
+                    <div
+                        class="col-md-3 d-flex justify-content-end justify-content-md-between align-items-center price-border py-3">
+                        <span class="h5">NT$ 900</span>
+                        <a href="" class="d-none d-md-block h4 text-hunter-green"><i class="fa fa-trash-o"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <hr class="d-none d-md-block">
+                <div class="row py-3">
+                    <div class="col-md-9 mb-3 mb-dm-0">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="bg-cover h-100 w-100" style="background-image: url(https://bit.ly/2QvsT63)">
+                                </div>
+                            </div>
+                            <!-- 電腦版水平排列，行動版垂直排列 -->
+                            <div class="col-6 col-md-9 py-3 d-flex flex-column flex-md-row align-items-center">
+                                <span class="h5 text-left mb-0">抹茶馬卡龍<br>NT$ 450</span>
+                                <div class="input-group mb-0 cart-control ml-0 ml-md-auto">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-lily-white" type="button"><i class="fa fa-minus text-hunter-green"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                    <input type="text" class="form-control text-center py-4 border-lily-white" placeholder=""
+                                        aria-label="Example text with two button addons"
+                                        aria-describedby="button-addon3" value="2">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-lily-white" type="button"><i class="fa fa-plus text-hunter-green"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 讓垃圾桶在行動版不顯示，讓價格跟垃圾桶區塊在電腦版左右撐開，行動版靠右 -->
+                    <div
+                        class="col-md-3 d-flex justify-content-end justify-content-md-between align-items-center price-border py-3">
+                        <span class="h5">NT$ 900</span>
+                        <a href="" class="d-none d-md-block h4 text-hunter-green"><i class="fa fa-trash-o"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cart-check-box p-3">
+                    <h2 class="cart-check-title h4 py-3 text-center">訂單摘要</h2>
+                    <hr class="border-white">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>小計</span>
+                        <span>NT$ 2,700</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>運費</span>
+                        <span>NT$ 300</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="h5">總計</span>
+                        <span class="h5">NT$ 3000</span>
+                    </div>
+                </div>
+                <div class="margin-md-0">
+                    <a href="checkout.html"
+                        class="btn btn-golden-glow btn-block btn-lg py-3 text-hunter-green rounded-0">結帳</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-hunter-green py-4">
+        <div class="container">
+            <!-- 令整個 row 區置中 -->
+            <div class="row justify-content-center">
+                <!-- 利用 flex 的方式，讓所有東西垂直 + 水平置中(行動裝置時，電腦版左邊區塊為置左) -->
+                <div
+                    class="col-md-5 d-flex justify-content-center justify-content-md-start align-items-center mb-3 mb-md-0">
+                    <img src="images/logo-light.svg" alt="" width="40">
+                    <!-- 預設下方會有一個 margin ，所以使用 mb-0 來消除以達到垂直置中效果 -->
+                    <span class="text-white h4 ml-3 mb-0">訂閱你我的甜蜜郵件</span>
+                </div>
+                <div class="col-md-5">
+                    <form class="form-text-bar  d-flex justify-content-center align-items-center">
+                        <label for="email-bar" class="h5">
+                            <i class="fa fa-envelope text-icon text-hunter-green" aria-hidden="true"></i>
+                        </label>
+                        <input type="email" name="email-bar" id="email-bar"
+                            class="w-100 py-3 px-5 bg-lily-white border-0 mb-0">
+                        <button type="submit" class="btn btn-golden-glow py-3 px-4 h4 mb-0 border-0"><i
+                                class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-3 bg-lily-white">
+        <div class="container">
+            <!-- 令整個 row 區置中 -->
+            <div class="row justify-content-center">
+                <!-- 使用直式排版，並讓物件上下分散撐開 -->
+                <div class="col-md-5 d-flex flex-column justify-content-between">
+                    <div>
+                        <img src="images/logotype-sm-dark.svg" alt="" height="27">
+                    </div>
+                    <ul class="ul-none pl-0 text-hunter-green pt-5">
+                        <li>07-1234-5678</li>
+                        <li>
+                            <a href="mailto:sweetaste@email.com" class="text-hunter-green">sweetaste@email.com</a>
+                        </li>
+                        <li>
+                            800 高雄市新興區幸福路 520 號
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 text-right d-none d-md-block">
+                    <img src="images/sm-今天是個吃甜點的好日子.svg" alt="" width="60">
+                </div>
+            </div>
+            <div class="row justify-content-center pt-4">
+                <div class="col-md-5">
+                    <img src="images/ic-line@.svg" alt="" width="32" height="32">
+                    <img src="images/ic-facebook.svg" alt="" width="32" height="32">
+                </div>
+                <div class="col-md-5 text-left text-md-right pt-2 text-hunter-green">
+                    © 2018 Sweetaste* All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">
+    </script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

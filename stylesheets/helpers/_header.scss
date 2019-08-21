@@ -1,0 +1,74 @@
+// header
+.header {
+    position: relative;
+}
+
+.main-img {
+    height: 496px;
+}
+
+.rectangle-menu-section {
+    margin-top: -90px;
+}
+
+.header-slogan {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.rectangle-wrap {
+    position: relative;
+    // 讓字變成直式
+    writing-mode: vertical-rl;
+    display: flex;
+    height: 256px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;    
+}
+
+.rectangle-text {
+    position: absolute;
+    font-size: 24px;
+    z-index: 4;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.zindex-3 {
+    z-index: 3;
+}
+
+.rectangle-cover {
+    background-color: rgba(63, 93, 69, 0.8);
+    transition: all .5s ease;
+}
+
+.rectangle-sides {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.rectangle-fuzzy {
+    // 模糊效果
+    filter: blur(3px);
+}
+
+// 利用 hover 讓游標指到時更改綠色圖層顏色
+.rectangle-wrap:hover .rectangle-cover {
+    background-color: rgba(255, 225, 128, 0.6);
+}
+
+// 利用 hover 讓游標指到時模糊效果失效
+.rectangle-wrap:hover .rectangle-fuzzy {
+    filter: blur(0);
+}
+
+// 利用 hover 讓游標指到時文字變色
+.rectangle-wrap:hover .rectangle-text {
+    color: theme-color("hunter-green");
+}

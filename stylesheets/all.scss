@@ -1,0 +1,25 @@
+// Required
+// 載入參數
+@import "../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+// Optional
+// 載入元件，如無特別需求，直接載入整個 bootstrap 即可
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./helpers/cart";
+@import "./helpers/checkout";
+@import "./helpers/footer";
+@import "./helpers/header";
+@import "./helpers/index";
+@import "./helpers/productCard";
+@import "./helpers/stepbar";
+
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+
