@@ -12310,7 +12310,13 @@ a.text-lily-white:hover, a.text-lily-white:focus {
 }
 
 .section-bg {
-  min-height: 250px;
+  min-height: 450px;
+}
+
+@media (max-width: 991.98px) {
+  .section-bg {
+    min-height: 250px;
+  }
 }
 
 .text-md-vertical {
@@ -12330,6 +12336,10 @@ a.text-lily-white:hover, a.text-lily-white:focus {
     margin-left: -15px;
     margin-right: -15px;
   }
+}
+
+.section-text {
+  max-height: 280px;
 }
 
 .product-card {
